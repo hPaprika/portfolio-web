@@ -1,0 +1,266 @@
+:root {
+  --color: rgb(1 166 111);
+  --bg-color: rgb(50, 50, 56);
+  --card-color: rgb(37 37 66);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+
+  &,
+  header a {
+    color: white;
+  }
+
+  * {
+    text-transform: capitalize;
+  }
+
+  ::selection {
+    background-color: var(--color);
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-btn {
+  transition: transform 0.4s ease;
+
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+.three-letter {
+  color: var(--color, rgb(108, 85, 224));
+
+  &::selection {
+    background-color: aquamarine;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 6rem;
+
+  h1 {
+    margin-inline-end: 2rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 2rem;
+    align-items: center;
+
+  }
+
+  a:hover {
+    color: var(--color);
+  }
+}
+
+main {
+  section {
+    margin-inline: 2rem;
+
+    & .icon-btn {
+      width: 20px;
+      height: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-block: inherit;
+    }
+
+    h2 {
+      color: lightgray;
+    }
+  }
+
+  article {
+    max-width: 25rem;
+    min-width: 20rem;
+
+    p {
+      line-height: 1.4rem;
+      margin-block-end: 2rem;
+    }
+
+    a {
+      background-color: var(--color);
+      padding: 1rem 2rem 1rem 1rem;
+      border-radius: .6rem;
+    }
+
+    .icon-btn svg {
+      height: 1.25rem;
+      width: 1.25rem;
+      fill: black;
+      display: inline-block;
+      transform: translate(10px, 4px);
+      transition: transform 0.3s ease;
+
+    }
+
+    .icon-btn:hover svg {
+      transform: translate(17px, 4px);
+    }
+  }
+
+  svg {
+    width: 30vw;
+    height: auto;
+    display: block;
+    fill: var(--color);
+
+    image {
+      width: 270px;
+      height: auto;
+      filter: grayscale(100%);
+    }
+  }
+
+  section:not(section:first-child) {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  section p {
+    text-transform: lowercase;
+
+    &::first-letter {
+      font-size: 27px;
+      text-transform: uppercase;
+    }
+  }
+
+}
+
+main section:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  height: 90vh;
+}
+
+main section:nth-child(2) {
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    article {
+      max-width: 8rem;
+    }
+
+    article p:nth-child(2) {
+      margin-block-end: 0rem;
+    }
+
+    figure img {
+      display: block;
+      border-radius: 50%;
+      background: linear-gradient(60deg, var(--color), var(--bg-color) 60%);
+
+    }
+  }
+}
+
+main section:last-child {
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  .todo-app {
+    width: 20rem;
+    height: auto;
+    margin-block: 5rem;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .project {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    article h2 {
+      transform: translateX(-2rem);
+    }
+    a{
+      text-transform: initial;
+      margin-inline-end: .7rem;
+    }
+  }
+}
+
+main section ul:first-child,
+footer ul {
+  list-style: none;
+  padding: 0;
+
+  a {
+    margin: .8rem;
+    display: flex;
+    width: 28px;
+    height: 28px;
+  }
+
+  a:hover svg {
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+  }
+}
+
+footer {
+  background-color: var(--color);
+  position: relative;
+
+  ul,
+  p {
+    padding-block: 2rem;
+    margin-block: 0;
+    color: black;
+  }
+
+  p {
+    text-align: center;
+    text-transform: initial;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  & ::selection {
+    background-color: white;
+  }
+}
