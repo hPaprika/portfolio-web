@@ -54,8 +54,9 @@ header {
   justify-content: space-between;
   margin-inline: 6rem;
 
-  h1 {
+  h2 {
     margin-inline-end: 2rem;
+    font-size: 2rem;
   }
 
   ul {
@@ -84,10 +85,6 @@ main {
     h1 {
       font-size: 3rem;
       margin-block: inherit;
-    }
-
-    h2 {
-      color: lightgray;
     }
   }
 
@@ -139,6 +136,16 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    h2 {
+      font-size: 2.4rem;
+      text-align: center;
+    }
+
+    h3 {
+      text-align: center;
+      margin-block-start: 0;
+    }
   }
 
   section p {
@@ -158,15 +165,13 @@ main section:first-child {
   align-items: center;
   gap: 4rem;
   height: 90vh;
+
+  h2 {
+    color: lightgray;
+  }
 }
 
 main section:nth-child(2) {
-
-  h1,
-  h2 {
-    text-align: center;
-  }
-
   .about-me {
     display: flex;
     justify-content: center;
@@ -190,12 +195,6 @@ main section:nth-child(2) {
 }
 
 main section:last-child {
-
-  h1,
-  h2 {
-    text-align: center;
-  }
-
   .todo-app {
     width: 20rem;
     height: auto;
@@ -211,17 +210,25 @@ main section:last-child {
     justify-content: space-evenly;
     align-items: center;
 
-    article h2 {
-      transform: translateX(-2rem);
+    article{
+      font-weight: initial;
+      font-size: initial;
     }
-    a{
+    article h2, article p {
+      /* transform: translateX(-2rem);  */
+      text-align: initial;
+    } 
+
+    a {
       text-transform: initial;
       margin-inline-end: .7rem;
+      position: relative;
+      left: -4rem;
     }
   }
 }
 
-main section ul:first-child,
+main ul,
 footer ul {
   list-style: none;
   padding: 0;
