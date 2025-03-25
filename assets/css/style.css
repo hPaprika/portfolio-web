@@ -154,6 +154,7 @@ main {
     &::first-letter {
       font-size: 27px;
       text-transform: uppercase;
+      box-sizing: border-box;
     }
   }
 
