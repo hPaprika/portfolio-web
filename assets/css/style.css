@@ -54,7 +54,7 @@ header {
   justify-content: space-between;
   margin-inline: 6rem;
 
-  h2 {
+  h1 {
     margin-inline-end: 2rem;
     font-size: 2rem;
   }
@@ -208,7 +208,6 @@ main section:nth-child(2) {
       display: block;
       border-radius: 50%;
       background: linear-gradient(60deg, var(--color), var(--bg-color) 60%);
-
     }
   }
 }
@@ -282,4 +281,57 @@ footer {
   & ::selection {
     background-color: white;
   }
+}
+
+@media (width < 600px){
+  header{
+    flex-direction: column;
+    h1{
+      margin-inline: auto;
+    }
+    ul{
+      padding: 0;
+    }
+  }
+
+  main {
+    section, .about-me, .project{
+      flex-direction: column;
+    }
+    section:first-child>svg{
+      transform: scale(1.4);
+    }
+    section:first-child header{
+      top: 23vh;
+      width: max-content;
+    }
+    header+ul{
+      display: none;
+    }
+    article{
+      text-align: center;
+    }
+    article p{
+      text-wrap: pretty;
+    }
+    section:not(section:first-child){
+      height: 100vh;
+      margin-block: 2rem;
+      padding-block: 6rem;
+    }
+    .about-me figure{
+      order: 2;
+    }
+    section:nth-child(2) .about-me figure img{
+      background: transparent
+    }
+    .project .todo-app{
+      order: 2;
+    }
+    .project article h2{
+      text-wrap: balance;
+      transform: translateX(20%);
+    }
+  }
+
 }
