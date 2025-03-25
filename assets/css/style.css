@@ -58,6 +58,9 @@ header {
     margin-inline-end: 2rem;
     font-size: 2rem;
   }
+  nav{
+    align-content: center;
+  }
 
   ul {
     display: flex;
@@ -119,7 +122,7 @@ main {
   }
 
   svg {
-    width: 30vw;
+    max-width: 30vw;
     height: auto;
     display: block;
     fill: var(--color);
