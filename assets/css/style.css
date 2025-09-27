@@ -292,17 +292,22 @@ footer {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media (width < 600px){
   body{
     padding: 0;
     margin: 0;
   }
+=======
+@media (width < 600px){
+>>>>>>> e90686ebdc2056fc50e1afa2531f043cfa249156
   header{
     flex-direction: column;
     h1{
       margin-inline: auto;
     }
     ul{
+<<<<<<< HEAD
 =======
 @media (width < 960px) {
   main section {
@@ -331,12 +336,17 @@ footer {
 
     ul {
 >>>>>>> refactor/all-code
+=======
+>>>>>>> e90686ebdc2056fc50e1afa2531f043cfa249156
       padding: 0;
     }
   }
 
   main {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e90686ebdc2056fc50e1afa2531f043cfa249156
     section, .about-me, .project{
       flex-direction: column;
     }
@@ -373,6 +383,7 @@ footer {
     .project article h2{
       text-wrap: balance;
       transform: translateX(20%);
+<<<<<<< HEAD
 =======
     section {
       margin-inline: 1rem;
@@ -430,6 +441,8 @@ footer {
     .project article h2 {
       text-wrap: balance;
 >>>>>>> refactor/all-code
+=======
+>>>>>>> e90686ebdc2056fc50e1afa2531f043cfa249156
     }
   }
 
